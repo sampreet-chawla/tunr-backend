@@ -3,3 +3,10 @@ Tunr-Backend is a tuny app's backend repo - A mern-group-lab project as Unit3 la
 
 Team Members - 
 Bojan Josilo, Gourav Auluck, Sampreet Chawla, and Shayan Gagan
+
+### APIs with BASE_URL=https://tunr-backend-alex-t1.herokuapp.com/
+
+- /seed : Clears the existing playlist and feeds with sample playlist. 
+- 
+- 
+
