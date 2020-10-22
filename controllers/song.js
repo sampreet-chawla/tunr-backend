@@ -3,16 +3,6 @@ const { Router } = require('express');
 const manySongs = require('../db/seedData.json');
 const router = Router();
 
-//seed route
-// router.get('/seed', async (req, res) => {
-// 	const msg = loadSeedData();
-// 	if (msg === 'success') {
-// 		res.json({ status: 200, msg: 'seed data loaded successfully..' });
-// 	} else {
-// 		res.json({ status: 500, error: msg });
-// 	}
-// });
-
 //index route
 router.get('/', async (req, res) => {
 	res.json(await Song.find({}));
@@ -38,7 +28,6 @@ router.delete('/:id', async (req, res) => {
 // add and remove fav
 router.put('/favorites/:id', async (req, res) => {
 	const song = await Song.findById(req.params.id);
-	console.log(song.fav);
 	res.json(
 		await Song.findByIdAndUpdate(
 			req.params.id,
