@@ -17,7 +17,8 @@ const app = express();
 
 //OTHER IMPORTS
 const morgan = require('morgan');
-
+const songRouter = require('./controllers/song');
+const seedRouter = require('./db/seed');
 ////////////
 //MIDDLEWARE
 ////////////
@@ -36,7 +37,8 @@ app.get('/', (req, res) => {
 });
 
 // Custom routes
-
+app.use('/songs', songRouter);
+app.use('/seed', seedRouter);
 //LISTENER
 app.listen(PORT, () => {
 	console.log(`Your are listening on port ${PORT}`);

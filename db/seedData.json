@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Pump it",
+        "artist":  "Black Eyed Peas" ,
+        "time": "3:46",
+        "fav": false
+    },
+    {
+       "title": "Beat It",
+        "artist":  "Michael Jackson" ,
+        "time": "4:59",
+        "fav": false
+    },
+    {
+       "title": "Alone",
+        "artist":  "Marshmello" ,
+        "time": "3:19",
+        "fav": false
+    },
+    {
+        "title": "Counting Stars",
+        "artist":  "OneRepublic" ,
+        "time": "3:43",
+        "fav": false
+    }
+]
